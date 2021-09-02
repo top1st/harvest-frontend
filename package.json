@@ -13,7 +13,8 @@
     "format:check": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "updateLPsAPR": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/updateLPsAPR.ts",
-    "prepare": "husky install"
+    "updateSDK": "cp ../pancake-swap-sdk/dist node_modules/@pancakeswap/sdk -r",
+    "updateUIKIT": "cp ../pancake-toolkit/packages/pancake-uikit/dist node_modules/@pancakeswap/uikit -r",
   },
   "browserslist": {
     "production": [
@@ -94,7 +95,6 @@
     "@types/react-transition-group": "^4.4.1",
     "@types/simplemde": "^1.11.7",
     "eslint": "^7.26.0",
-    "husky": "^7.0.0",
     "prettier": "^2.3.0",
     "source-map-explorer": "^2.5.2",
     "ts-node": "^9.1.1"
