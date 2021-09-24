@@ -12,5 +12,6 @@ export const BITQUERY_API = 'https://graphql.bitquery.io'
  */
 export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
 
-export const INFO_CLIENT = 'https://thegraph.harvesttradingcap.com/subgraphs/name/harvestswap/exchange'
+// export const INFO_CLIENT = 'https://thegraph.harvesttradingcap.com/subgraphs/name/harvestswap/exchange'
+export const INFO_CLIENT = 'https://api.studio.thegraph.com/query/2080/harvest-info/0.0.1'
 export const BLOCKS_CLIENT = 'https://api.thegraph.com/subgraphs/name/pancakeswap/blocks'
