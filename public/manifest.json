@@ -1,7 +1,7 @@
 {
   "short_name": "HarvestSwap",
   "name": "HarvestSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
+  "description": "Farm HTCCAKE with Pancake LP Tokens",
   "homepage_url": "https://pancakeswap.finance",
   "start_url": ".",
   "display": "standalone",

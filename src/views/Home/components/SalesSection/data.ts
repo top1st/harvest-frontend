@@ -19,7 +19,7 @@ export const swapSectionData: SalesSectionProps = {
     attributes: [
       { src: 'BNB', alt: 'BNB token' },
       { src: 'BTC', alt: 'BTC token' },
-      { src: 'CAKE', alt: 'CAKE token' },
+      { src: 'HTCCAKE', alt: 'HTCCAKE token' },
     ],
   },
 }
@@ -49,13 +49,13 @@ export const earnSectionData: SalesSectionProps = {
 }
 
 export const cakeSectionData: SalesSectionProps = {
-  headingText: 'CAKE makes our world go round.',
+  headingText: 'HTCCAKE makes our world go round.',
   bodyText:
-    'CAKE token is at the heart of the HarvestSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'HTCCAKE token is at the heart of the HarvestSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-    text: 'Buy CAKE',
+    to: '/swap?outputCurrency=0xaC72026454e15f671B4f0b4E8C0fC5faD0f77107',
+    text: 'Buy HTCCAKE',
     external: false,
   },
   secondaryButton: {
@@ -69,7 +69,7 @@ export const cakeSectionData: SalesSectionProps = {
     attributes: [
       { src: 'bottom-right', alt: 'Small 3d pancake' },
       { src: 'top-right', alt: 'Small 3d pancake' },
-      { src: 'coin', alt: 'CAKE token' },
+      { src: 'coin', alt: 'HTCCAKE token' },
       { src: 'top-left', alt: 'Small 3d pancake' },
     ],
   },

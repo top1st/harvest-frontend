@@ -51,11 +51,11 @@ const BountyCard = () => {
       <Text mb="16px">{t('This bounty is given as a reward for providing a service to other users.')}</Text>
       <Text mb="16px">
         {t(
-          'Whenever you successfully claim the bounty, you’re also helping out by activating the Auto CAKE Pool’s compounding function for everyone.',
+          'Whenever you successfully claim the bounty, you’re also helping out by activating the Auto HTCCAKE Pool’s compounding function for everyone.',
         )}
       </Text>
       <Text style={{ fontWeight: 'bold' }}>
-        {t('Auto-Compound Bounty: %fee%% of all Auto CAKE pool users pending yield', { fee: fee / 100 })}
+        {t('Auto-Compound Bounty: %fee%% of all Auto HTCCAKE pool users pending yield', { fee: fee / 100 })}
       </Text>
     </>
   )
@@ -70,51 +70,51 @@ const BountyCard = () => {
   return (
     <>
       {tooltipVisible && tooltip}
-      <StyledCard>
-        <CardBody>
-          <Flex flexDirection="column">
-            <Flex alignItems="center" mb="12px">
-              <Text fontSize="16px" bold color="textSubtle" mr="4px">
-                {t('Auto CAKE Bounty')}
-              </Text>
-              <Box ref={targetRef}>
-                <HelpIcon color="textSubtle" />
-              </Box>
-            </Flex>
-          </Flex>
-          <Flex alignItems="center" justifyContent="space-between">
-            <Flex flexDirection="column" mr="12px">
-              <Heading>
-                {hasFetchedCakeBounty ? (
-                  <Balance fontSize="20px" bold value={cakeBountyToDisplay} decimals={3} />
-                ) : (
-                  <Skeleton height={20} width={96} mb="2px" />
-                )}
-              </Heading>
-              {hasFetchedDollarBounty ? (
-                <Balance
-                  fontSize="12px"
-                  color="textSubtle"
-                  value={dollarBountyToDisplay}
-                  decimals={2}
-                  unit=" USD"
-                  prefix="~"
-                />
-              ) : (
-                <Skeleton height={16} width={62} />
-              )}
-            </Flex>
-            <Button
-              disabled={!dollarBountyToDisplay || !cakeBountyToDisplay || !callFee}
-              onClick={onPresentBountyModal}
-              scale="sm"
-              id="clickClaimVaultBounty"
-            >
-              {t('Claim')}
-            </Button>
-          </Flex>
-        </CardBody>
-      </StyledCard>
+      {/*<StyledCard>*/}
+      {/*  <CardBody>*/}
+      {/*    <Flex flexDirection="column">*/}
+      {/*      <Flex alignItems="center" mb="12px">*/}
+      {/*        <Text fontSize="16px" bold color="textSubtle" mr="4px">*/}
+      {/*          {t('Auto HTCCAKE Bounty')}*/}
+      {/*        </Text>*/}
+      {/*        <Box ref={targetRef}>*/}
+      {/*          <HelpIcon color="textSubtle" />*/}
+      {/*        </Box>*/}
+      {/*      </Flex>*/}
+      {/*    </Flex>*/}
+      {/*    <Flex alignItems="center" justifyContent="space-between">*/}
+      {/*      <Flex flexDirection="column" mr="12px">*/}
+      {/*        <Heading>*/}
+      {/*          {hasFetchedCakeBounty ? (*/}
+      {/*            <Balance fontSize="20px" bold value={cakeBountyToDisplay} decimals={3} />*/}
+      {/*          ) : (*/}
+      {/*            <Skeleton height={20} width={96} mb="2px" />*/}
+      {/*          )}*/}
+      {/*        </Heading>*/}
+      {/*        {hasFetchedDollarBounty ? (*/}
+      {/*          <Balance*/}
+      {/*            fontSize="12px"*/}
+      {/*            color="textSubtle"*/}
+      {/*            value={dollarBountyToDisplay}*/}
+      {/*            decimals={2}*/}
+      {/*            unit=" USD"*/}
+      {/*            prefix="~"*/}
+      {/*          />*/}
+      {/*        ) : (*/}
+      {/*          <Skeleton height={16} width={62} />*/}
+      {/*        )}*/}
+      {/*      </Flex>*/}
+      {/*      <Button*/}
+      {/*        disabled={!dollarBountyToDisplay || !cakeBountyToDisplay || !callFee}*/}
+      {/*        onClick={onPresentBountyModal}*/}
+      {/*        scale="sm"*/}
+      {/*        id="clickClaimVaultBounty"*/}
+      {/*      >*/}
+      {/*        {t('Claim')}*/}
+      {/*      </Button>*/}
+      {/*    </Flex>*/}
+      {/*  </CardBody>*/}
+      {/*</StyledCard>*/}
     </>
   )
 }

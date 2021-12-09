@@ -91,7 +91,7 @@ const FarmAuction = () => {
               {t('Community Farm Auction')}
             </Heading>
             <Text color="textSubtle" mb="24px">
-              {t('Each week, qualifying projects can bid CAKE for the right to host a 7-day Farm on HarvestSwap.')}
+              {t('Each week, qualifying projects can bid HTCCAKE for the right to host a 7-day Farm on HarvestSwap.')}
             </Text>
             <Text color="textSubtle">{t('This page is for projects to bid for farms.')}</Text>
             <Text color="textSubtle" mb="24px">

@@ -27,7 +27,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: How does this feature benefit HarvestSwap users and CAKE holders?
+      label: How does this feature benefit HarvestSwap users and HTCCAKE holders?
       description: Explain how this feature will be beneficial for the HarvestSwap community and ecosystem.
     validations:
       required: true

@@ -1,19 +1,19 @@
 import { ChainId, Token } from '@pancakeswap/sdk'
 
-export const CAKE: { [chainId: number]: Token } = {
+export const HTCCAKE: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
-    '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    '0xaC72026454e15f671B4f0b4E8C0fC5faD0f77107',
     18,
-    'CAKE',
-    'HarvestSwap Token',
+    'HTCCAKE',
+    'HarvestCake',
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
     '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     18,
-    'CAKE',
-    'HarvestSwap Token',
+    'HTCCAKE',
+    'HarvestCake',
   ),
 }
 export const BUSD: { [chainId: number]: Token } = {
@@ -65,9 +65,9 @@ const tokens = {
     projectLink: 'https://www.binance.com/',
   },
   cake: {
-    symbol: 'CAKE',
+    symbol: 'HTCCAKE',
     address: {
-      56: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+      56: '0xaC72026454e15f671B4f0b4E8C0fC5faD0f77107',
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     },
     decimals: 18,
@@ -850,7 +850,7 @@ const tokens = {
   syrup: {
     symbol: 'SYRUP',
     address: {
-      56: '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
+      56: '0x233588CF2fCF67833064C229d81DF5037eFD7574',
       97: '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
     },
     decimals: 18,
