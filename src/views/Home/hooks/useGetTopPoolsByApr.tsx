@@ -62,7 +62,11 @@ const useGetTopPoolsByApr = (isIntersecting: boolean) => {
   useEffect(() => {
     const getTopPoolsByApr = (activePools: Pool[]) => {
       const sortedByApr = orderBy(activePools, (pool: Pool) => pool.apr || 0, 'desc')
-      setTopPools(sortedByApr.slice(0, 5))
+      if(fetchStatus === FetchStatus.SUCCESS && !topPools[0]) {
+        setTimeout(setTopPools, 60000, sortedByApr.slice(0,5))
+      } else {
+        setTopPools(sortedByApr.slice(0, 5))
+      }
     }
     if (fetchStatus === FetchStatus.SUCCESS && !topPools[0]) {
       getTopPoolsByApr(pools)

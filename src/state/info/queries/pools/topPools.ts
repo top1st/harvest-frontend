@@ -46,7 +46,11 @@ const useTopPoolAddresses = (): string[] => {
   useEffect(() => {
     const fetch = async () => {
       const addresses = await fetchTopPools(timestamp24hAgo)
-      setTopPoolAddresse(addresses)
+      if (topPoolAddresses.length === 0) {
+        setTimeout(setTopPoolAddresse, 60000, addresses)
+      } else {
+        setTopPoolAddresse(addresses)
+      }
     }
     if (topPoolAddresses.length === 0) {
       fetch()

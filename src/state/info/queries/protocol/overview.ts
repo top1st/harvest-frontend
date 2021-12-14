@@ -105,7 +105,7 @@ const useFetchProtocolData = (): ProtocolFetchState => {
     }
     const allBlocksAvailable = block24?.number && block48?.number
     if (allBlocksAvailable && !blockError && !fetchState.data) {
-      fetch()
+      setTimeout(fetch, 60000)
     }
   }, [block24, block48, blockError, fetchState])
 

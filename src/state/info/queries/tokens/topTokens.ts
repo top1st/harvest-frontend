@@ -48,7 +48,11 @@ const useTopTokenAddresses = (): string[] => {
   useEffect(() => {
     const fetch = async () => {
       const addresses = await fetchTopTokens(timestamp24hAgo)
-      setTopTokenAddresses(addresses)
+      if(addresses.length === 0) {
+        setTimeout(setTopTokenAddresses, 60000, addresses)
+      } else {
+        setTopTokenAddresses(addresses)
+      }
     }
     if (topTokenAddresses.length === 0) {
       fetch()
